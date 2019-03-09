@@ -49,30 +49,44 @@
                 </header>
         </section>
     </div>
-
-    <div class="form-group" id = "emailSubmissionBox">
-      <section>
-          <header>
-            <h2 id="form-title">Subscribe to our email list!</h2>
-          </header>
-        
-        
-        <br>
-        <section id="fields">
-            <input type="email" class="form-control" id="emailBox" aria-describedby="emailHelp" placeholder="Your email">
-            <input type="text" class="form-control" id="fnameBox" aria-describedby="emailHelp" placeholder="Your first name">
-            <input type="text" class="form-control" id="surnameBox" aria-describedby="emailHelp" placeholder="Your last name">
-            <br>
-            <input type="number" class="form-control" id="pnBox" aria-describedby="emailHelp" placeholder="Your phone number">
-            <br>
-            <input type="email" class="form-control" id="addressBox" aria-describedby="emailHelp" placeholder="Your address">
-            <input type="text" class="form-control" id="streetNameBox" aria-describedby="emailHelp" placeholder="Your street name">
-            <input type="text" class="form-control" id="townNameBox" aria-describedby="emailHelp" placeholder="Your town">
-            
-            
-        </section>    
-      </section>
-    </div>
+    <div id="subscribe">
+            <header>
+                <h1 id="title">SUBSCRIBE TO OUR EMAIL LIST</h1>
+            </header>
+            <form action="" method="post">
+                <span class="field">
+                <label for="contact">Your Name:</label>
+                <input type="text" name="fnameBox" id="fnameBox" class="input" size="40" maxlength="42" placeholder="First Name" required>
+                <input type="text" name="surnameBox" id="surnameBox" class="input" size="40" maxlength="42" placeholder="Last Name" required>
+            </span>
+                <span class="field">
+                <label for="emailBox">Enter your email address:</label>
+                <input type="email" name="emailBox" id="emailBox" placeholder="johndoe@mail.wlu.edu" size="40" required>
+                </span>
+                <span class="field">
+                        <label for="pnBox">Enter your phone number:</label>
+                        <input type="number" name="pnBox" id="pnBox" placeholder="555-555-5555" size="15" required>
+                </span>
+                <span class="field">
+                                <label for="email">Enter your physical address:</label>
+                                <input type="text" name="addressBox" id="addressBox" placeholder="123 Abc ave." size="40" required>
+                                <input type="text" name="townNameBox" id="townNameBox" placeholder="Lexington, VA" size="40" required>
+                </span>
+                <span class="field">
+                            <label for="email">Enter your email address:</label>
+                            <input type="email" name="email" id="email" placeholder="johndoe@mail.wlu.edu" size="40" required>
+                </span>
+                <span class="field">
+                    <label for="email">Enter your email address:</label>
+                    <input type="email" name="email" id="email" placeholder="johndoe@mail.wlu.edu" size="40" required>
+                </span>
+                
+                <button name="submit" id="submit">SUBMIT!</button>
+                
+            </form>
+    
+        </div>
+    
     <br>
     <footer>
         <section id="footer-left">
