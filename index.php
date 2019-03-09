@@ -39,9 +39,9 @@ if ($conn->connect_error) {
                             firstname: $("#fnameBox").val(),
                             lastname: $("#surnameBox").val(),
                             phone: $("#pnBox").val(),
-                            streetaddress: $("#addressBox").val(),
-                            cityandstate: $("townNameBox").val(),
-                            state: $("#state").val()
+                            streetAddress: $("#addressBox").val(),
+                            city: $("#cityBox").val(),
+                            state: $("#stateBox").val()
                         }
                     )
                     .done(function(data) {
@@ -116,10 +116,71 @@ if ($conn->connect_error) {
                         <label for="pnBox">Enter your phone number:</label>
                         <input type="number" name="pnBox" id="pnBox" placeholder="555-555-5555" size="15" required>
                 </span>
+                <h2 style="text-align: center">PHYSICAL ADDRESS</h2>
                 <span class="field">
-                                <label for="email">Enter your physical address:</label>
-                                <input type="text" name="addressBox" id="addressBox" placeholder="123 Abc ave." size="40" required>
-                                <input type="text" name="townNameBox" id="townNameBox" placeholder="Lexington, VA" size="40" required>
+                        <label for="addressBox">Enter your Street address:</label>
+                        <input type="text" name="addressBox" id="addressBox" placeholder="123 Abc ave." size="40" required>
+                </span>
+                <span class="field">
+                   <label for="cityBox"><span id="address-label"> Enter your City:</span></label>
+                   <input type="text" name="cityBox" id="cityBox" placeholder="Lexington" size="40" required>
+                </span>
+                <span class="field">
+                   <label for="stateBox">Select your State:</label>
+                                <select name="stateBox" id="stateBox" required>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AK">Alaska</option>
+                                        <option value="AZ">Arizona</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="CA">California</option>
+                                        <option value="CO">Colorado</option>
+                                        <option value="CT">Connecticut</option>
+                                        <option value="DE">Delaware</option>
+                                        <option value="DC">District Of Columbia</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="GA">Georgia</option>
+                                        <option value="HI">Hawaii</option>
+                                        <option value="ID">Idaho</option>
+                                        <option value="IL">Illinois</option>
+                                        <option value="IN">Indiana</option>
+                                        <option value="IA">Iowa</option>
+                                        <option value="KS">Kansas</option>
+                                        <option value="KY">Kentucky</option>
+                                        <option value="LA">Louisiana</option>
+                                        <option value="ME">Maine</option>
+                                        <option value="MD">Maryland</option>
+                                        <option value="MA">Massachusetts</option>
+                                        <option value="MI">Michigan</option>
+                                        <option value="MN">Minnesota</option>
+                                        <option value="MS">Mississippi</option>
+                                        <option value="MO">Missouri</option>
+                                        <option value="MT">Montana</option>
+                                        <option value="NE">Nebraska</option>
+                                        <option value="NV">Nevada</option>
+                                        <option value="NH">New Hampshire</option>
+                                        <option value="NJ">New Jersey</option>
+                                        <option value="NM">New Mexico</option>
+                                        <option value="NY">New York</option>
+                                        <option value="NC">North Carolina</option>
+                                        <option value="ND">North Dakota</option>
+                                        <option value="OH">Ohio</option>
+                                        <option value="OK">Oklahoma</option>
+                                        <option value="OR">Oregon</option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="SD">South Dakota</option>
+                                        <option value="TN">Tennessee</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="UT">Utah</option>
+                                        <option value="VT">Vermont</option>
+                                        <option value="VA" selected>Virginia</option>
+                                        <option value="WA">Washington</option>
+                                        <option value="WV">West Virginia</option>
+                                        <option value="WI">Wisconsin</option>
+                                        <option value="WY">Wyoming</option>
+                                    </select>				
+				
                 </span>    
                 <button name="submit" id="submit">SUBMIT!</button>
                 
