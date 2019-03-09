@@ -70,12 +70,12 @@ if ($conn->connect_error) {
     </script>
     <div id="top">
         <section  id="logo-container">
-            <img id="logo" src="images/logoy.jpg" alt="Amnesty Logo">
-        </section>
+            <a href="index.php"><img id="logo" src="images/logoy.jpg" alt="Amnesty Logo"></a>
+      </section>
         <section class="container" id="nav-bar">
             <a class="menu" href="about.html">About Us</a>
             <a class="menu" href="map.html">Map</a>
-            <a id="activeNav" class="menu" href="index.html">Home</a>
+            <a id="activeNav" class="menu" href="index.php">Home</a>
         </section>
     </div>
     <br>

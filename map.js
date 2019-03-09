@@ -1,4 +1,5 @@
 //For map
+var geocoder;
 var map;
 var locations = [{lat: 40.416775, lng: -3.703790},{lat: 40.41, lng: -3.8}];
 function initMap() {
@@ -341,8 +342,31 @@ function initMap() {
       }
       map.mapTypes.set('styled_map', styledMapType);
         map.setMapTypeId('styled_map');
+
+//below is for geocoding
+        geocoder = new google.maps.Geocoder();
+      
+        codeAddress();
+
 }   
 
+var city = '204 W Washington St Lexington, VA';
+function codeAddress() {
+  var address = city;
+  geocoder.geocode( { 'address': address}, function(results, status) {
+    if (status == 'OK') {
+      map.setCenter(results[0].geometry.location);
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location
+      });
+    } else {
+      alert('Geocode was not successful for the following reason: ' + status);
+    }
+  });
+}
+
+//until here
 function addMarker(location, map) {
     var marker = new google.maps.Marker({
       position: location,
