@@ -60,10 +60,10 @@ if ($conn->connect_error) {
         window.onscroll = function(){
             var nav = document.getElementById("top");
             if (window.pageYOffset < 1){
-               nav.style.opacity = 1;
+               nav.style.backgroundColor = rgba(255,255,255,1);
             }
             else{
-                nav.style.opacity = .35;
+                nav.style.backgroundColor = rgba(255,255,255,0.75);
 
             }
         };
