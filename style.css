@@ -9,6 +9,7 @@ html, body {
   }
 
 #logo{
+    margin-left: 20px;
     width: 180px;  
     height: 100%
 }
