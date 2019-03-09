@@ -5,10 +5,10 @@
 //          Adds that data to the database and then sends a confirmation email.
 
 // Server and database specifications here:
-$servername = "localhost";
-$username = "hornsbym_insert";
-$password = "Password123";
-$dbname = "hornsbym_testDB";
+  $servername = "localhost";
+  $username = "amnestyh_insert";
+  $password = "insert1!";
+  $dbname = "amnestyh_Data";
 
 // Create connection here:
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -19,7 +19,7 @@ if ($conn->connect_error) {
 }
 
 // Base query statement here:
-$queryStatement = "INSERT INTO test VALUES (";
+$queryStatement = "INSERT INTO user_info VALUES (";
 
 // Iterate through a list of input data and build SQL query here:
 $queryContent = "";
