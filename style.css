@@ -175,7 +175,7 @@ p{
 }
 
 label{
-    font-size: 1.3em;
+    font-size: 1.4em;
     display: table-cell;
     text-align: right;
     padding-right: 5px;
@@ -188,13 +188,22 @@ form{
 }
 
 input{
-    height: 20px;
-    border-radius: 9px;
-    padding: 5px;
+    height: 25px;
+    border-radius: 7px;
+    padding: 8px;
     border: none;
     display: table-cell;
-    margin: 2px;
+    margin-right: 5px;
     float: left;
+}
+
+select{
+    border: none;
+    border-radius: 10px;
+    padding: 4px;
+    margin-top:4px;
+    margin-bottom: 6px;
+    display: table-cell;
 }
 
 button{
@@ -219,6 +228,8 @@ button:hover{
 .field{
     display: table-row;
     margin-left: 0;
+    margin-bottom: 15px;
+    padding: 4px;
 }
 
 footer{
@@ -233,4 +244,19 @@ footer{
     justify-content: center;
     clear: both;
     vertical-align: middle;
+}
+
+#submit{
+    margin-top: 5px;
+    display: inline-block;
+    
+}
+
+#address-label{
+    margin-top: 0;
+    padding: 10px;
+    width: 20px;
+   
+    height: 40px;
+
 }
