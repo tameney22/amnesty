@@ -76,6 +76,7 @@ html, body {
     padding: 300px;
     
     background: url(images/intro-back.jpg) no-repeat left center;
+<<<<<<< HEAD
 }
 
 #introtext{
@@ -126,6 +127,24 @@ p{
 
 #quote{
     font-size: 4em;
+=======
+>>>>>>> transparent_navbar
 }
+
+#introtext{
+    position: absolute;
+    top: 220px;
+    left: 6%;
+    width: 400px;
+    color: yellow;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    font-size: 3em;
+    padding: 10px;
+    font-weight: bold;
+    background-color: black;
+
+
+}
+
 
 
