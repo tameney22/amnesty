@@ -89,9 +89,43 @@ html, body {
     padding: 10px;
     font-weight: bold;
     background-color: black;
+}
 
+#left, #right{
+    display: inline-block;
+    width: 48%;
+    margin: 10px;
 
 }
 
+h1{
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+#content{
+    font-size: 1.5em;
+    font-family: 'Lucida Sans'; 
+}
+
+#right{
+    padding:50px;    
+    float: right;
+    width: 230px;
+    
+}
+
+#text{
+    width: 90%;
+    margin: auto;
+}
+
+p{
+    text-align: center;
+}
+
+#quote{
+    font-size: 4em;
+}
 
 
