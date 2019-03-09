@@ -40,7 +40,7 @@ if ($conn->connect_error) {
                             lastname: $("#surnameBox").val(),
                             phone: $("#pnBox").val(),
                             streetAddress: $("#addressBox").val(),
-                            city: $("cityBox").val(),
+                            city: $("#cityBox").val(),
                             state: $("#stateBox").val()
                         }
                     )
